@@ -1,0 +1,17 @@
+@use "_partials/_common.scss";
+@use "_partials/_variables.scss";
+@use "_partials/_header.scss";
+@use "_partials/_footer.scss";
+
+.hide-alert {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: -100px;
+    left: 50%;
+    z-index: 99;
+    transition: top 0.5s ease-in-out;
+}
+
+.hide-alert.spawn-alert {
+    top: 50px!important;
+}
